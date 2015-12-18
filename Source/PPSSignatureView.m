@@ -269,6 +269,8 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         addVertex(&dotsLength, touchPoint);
 
         glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+        self.hasSignature = YES;
     }
 
     [self setNeedsDisplay];
